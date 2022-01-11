@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   // Registration of components
@@ -12,7 +13,8 @@ import { AuthModule } from './auth/auth.module';
   // Using other modules.
   imports: [
     BrowserModule,
-    AuthModule
+    AuthModule,
+    HomeModule
   ],
   // Provide services
   providers: [],

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   // Registration of components
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   // Using other modules.
   imports: [
-    BrowserModule
+    BrowserModule,
+    AuthModule
   ],
   // Provide services
   providers: [],

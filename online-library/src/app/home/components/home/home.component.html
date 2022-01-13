@@ -3,7 +3,8 @@
 <!-- Angular Directives -->
 <!-- Change attribute/structures of elements -->
 <!-- 2 types - attribute/structural(ngFor, ngIf) -->
-<div class="container">
-    <book-card [book]="item" *ngFor="let item of books"></book-card>
-
+<div class="container row">
+    <div class="col-md-3" *ngFor="let item of books">
+        <book-card [book]="item"></book-card>
+    </div>
 </div>

@@ -1,11 +1,9 @@
 <app-header></app-header>
 
+<!-- Angular Directives -->
+<!-- Change attribute/structures of elements -->
+<!-- 2 types - attribute/structural(ngFor, ngIf) -->
 <div class="container">
-    <book-card [book]="dotnetBook"></book-card>
-    <book-card [book]="dotnetBook"></book-card>
-    <book-card [book]="dotnetBook"></book-card>
-    <book-card [book]="dotnetBook"></book-card>
-
-    <div id="1" name="container"></div>
+    <book-card [book]="item" *ngFor="let item of books"></book-card>
 
 </div>

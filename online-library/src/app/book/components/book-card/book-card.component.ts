@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { BookModel } from '../models/book.model';
+import { BookModel } from '../../models/book.model';
 
 @Component({
   selector: 'book-card',
   templateUrl: './book-card.component.html',
-  styleUrls: ['./book-card.component.css']
+  styleUrls: ['./book-card.component.css'],
 })
 export class BookCardComponent implements OnInit {
 
